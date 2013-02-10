@@ -60,6 +60,8 @@ action :write do
       type ||= 'int'
     when Float
       type ||= 'float'
+    when string
+      type ||= 'string'
     when Hash
       type ||= 'dict'
 
